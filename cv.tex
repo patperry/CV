@@ -1,0 +1,345 @@
+% cv-us.tex
+% $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $
+%
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2006 Jason Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents, however, I do ask that you
+% please leave this notice and the above URL in the source code if you
+% choose to redistribute this file.
+%
+% Jason R. Blevins <jrblevin@sdf.lonestar.org>
+% http://jrblevin.freeshell.org
+% Durham, December 12, 2006
+%
+%%---------------------------------------------------------------------------%
+%
+% Notes:
+%
+% * Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
+%   section below.
+%
+% * To create a new page use: \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass statement to put headings in margin:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * Can divide publication/presentation list into subsections by year:
+%   \section{\bf\small\hspace{8mm}2006}
+%
+%%----------------------------------------------------------------------------%
+
+\documentclass[overlapped,line,letterpaper]{res}
+
+\usepackage{ifpdf}
+
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
+  pdfauthor={Patrick O. Perry},
+  pdfcreator={$ $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $ $},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={statistics applied matrix decomposition cross validation}
+}
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\large\textbf}
+
+%---------------------------------------------------------------------------
+
+\name{Patrick O. Perry}
+
+\begin{resume}
+
+\begin{ncolumn}{2}
+  Maxwell Dworkin Rm. 334       & Phone: (650) 619-5203 \\
+  33 Oxford St                  & {\tt patperry@seas.harvard.edu} \\
+  Cambridge, MA 02138           & {\tt \verb+http://people.seas.harvard.edu/~patperry/+}
+\end{ncolumn}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Education}
+
+Ph.D. Statistics, Stanford University, 2009
+
+M.S. Electrical Engineering, Stanford University, 2004
+
+B.S. Mathematics, Stanford University, 2003, with honors
+
+%%---------------------------------------------------------------------------%%
+
+\section{\bf Fellowships and Awards}
+\begin{itemize}
+\item Burt and Deedee McMurtry Stanford Graduate Fellowship, 2004--2007
+\end{itemize}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Teaching Experience}
+
+At Stanford University:
+
+\begin{itemize}
+\item Teaching Assistant, Spatial Statistics (Ph.D.), Spring 2009
+\item Teaching Assistant, Statistical Consulting Workshop, Winter 2009
+\item Teaching Assistant, Software for Data Analysis (Ph.D.), Winter 2008
+\item Teaching Assistant, Monte Carlo Methods (Ph.D.), Fall 2007
+\item Teaching Assistant, Modern Applied Statistics (Ph.D.), Fall 2006
+\item Teaching Assistant, Statistical Consulting Workshop, Fall 2005
+\item Teaching Assistant, Statistical Computing (M.S.), Spring 2005
+\end{itemize}
+
+%------------------------------------------------------------------------------
+
+\section{\bf Research Experience}
+
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body\\
+\end{format}
+
+\title{Postdoctoral Researcher}
+\employer{Patrick\ J.\ Wolfe}
+\location{Engineering and Applied Sciences, Harvard}
+\dates{2009--present}
+\begin{position}
+  Modeling and inference for social networks.
+\end{position}
+
+\title{Research Assistant}
+\employer{Art\ B.\ Owen}
+\location{Statistics, Stanford}
+\dates{2006--2009}
+\begin{position}
+  Cross validation for matrix decompositions.  Applied random matrix theory.
+\end{position}
+
+\title{Research Assistant}
+\employer{Gunnar\ E.\ Carlsson}
+\location{Mathematics, Stanford}
+\dates{2002--2004}
+\begin{position}
+  Computational topology software and data analysis.
+\end{position}
+
+
+\section{\bf Affiliations}
+
+
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body\\
+\end{format}
+
+\title{Fellow}
+\employer{Institute for Quantitative Social Science}
+\location{Harvard}
+\dates{2010--present}
+\begin{position}
+\end{position}
+
+
+%---------------------------------------------------------------------------
+
+\section{\bf Employment}
+
+\begin{format}
+\employer{l}\location{r}\\
+\title{l}\dates{r}\\
+\body\\
+\end{format}
+
+\title{Consultant}
+\employer{Insignia Environmental}
+\location{Palo Alto, CA}
+\dates{March 2009}
+\begin{position}
+    Bootstrap-based analysis of three experiments designed to estimate
+    the environmental impact of installing new wind turbines in
+    Contra Costa County, in California.
+\end{position}
+
+\title{Consultant}
+\employer{Kingsford Capital Management}
+\location{Pt. Richmond, CA}
+\dates{August 2008--present}
+\begin{position}
+    General statistics advice, help with data analysis and programming in R.
+\end{position}
+
+\title{Biostatistician}
+\employer{Stanford School of Medicine}
+\location{Stanford, CA}
+\dates{2006--2007}
+\begin{position}
+    Data analysis and brief write-ups for studies performed by resident
+    physicians under the supervision of Dr. Raj Mitra, Orthopaedic Surgery 
+    Department.
+\end{position}
+
+%------------------------------------------------------------------------------
+
+\section{\bf Publications and Presentations}
+
+``Minimax rank estimation for subspace tracking.''
+With P.\ J.\ Wolfe.
+\textit{Journal of Selected Topics in Signal Processing},
+to appear.
+
+``A rotation test to verify latent structure.''
+With A.\ B.\ Owen.
+\textit{Journal of Machine Learning Research},
+\textbf{11}:603--624, 2010.
+
+``Cross-validation for unsupervised learning.''
+Supervised by A.\ B.\ Owen.
+PhD thesis, Stanford University. 2009.
+
+``Bi-cross-validation of the SVD and the non-negative matrix factorization.''
+With A.\ B.\ Owen.
+\textit{Annals of Applied Statistics},
+\textbf{3}(2):564--594, 2009.
+
+``Latent covariate detection and verification.''
+With A.\ B.\ Owen, 
+Biomedical Computation at Stanford (BCATS) Symposium, Stanford CA, October 21, 2006.
+Poster.
+
+``Latent covariate detection and verification: a case study in genetics.''
+With A.\ B.\ Owen, SAMSI Random Matrices Opening Workshop, Chapel Hill, NC, 
+September 17--20, 2006. Poster. 
+
+``Application of simplicial sets to computational topology.''
+Supervised by G.\ E.\ Carlsson.
+Undergraduate honors thesis, Stanford University. 2003.
+
+\section{\bf Working Papers}
+
+``A graph log-linear model for characterizing repeated interactions.''
+With P.\ J.\ Wolfe.
+
+
+%------------------------------------------------------------------------------
+
+%%===========================================================================%%
+%\newpage
+%\opening
+
+\section{\bf Software}
+
+{\texttt{RMTstat}}. With I.\ Johnstone, Z.\ Ma, and M.\ Shahram.
+An \texttt{R} package for distributions and statistics from Random Matrix Theorey (RMT),
+mostly related to large sample covariance matrices.
+\href{http://cran.r-project.org/web/packages/RMTstat/index.html}http://cran.r-project.org/web/packages/RMTstat/index.html.
+
+{\texttt{bcv}}.
+An \texttt{R} package for bi-cross-validation.  This package implements
+cross-validation-based methods for choosing the rank of an SVD approximation.
+\href{http://cran.r-project.org/web/packages/bcv/index.html}http://cran.r-project.org/web/packages/bcv/index.html.
+
+{\texttt{hs-blas}}.
+A high-level interface to the BLAS linear algebra library for the Haskell
+programming language.
+\href{http://hackage.haskell.org/cgi-bin/hackage-scripts/package/blas}http://hackage.haskell.org/cgi-bin/hackage-scripts/package/blas.
+
+{\texttt{hs-monte-carlo}}.
+A Haskell library for performing Monte-Carlo simulations.
+\href{http://hackage.haskell.org/cgi-bin/hackage-scripts/package/monte-carlo}http://hackage.haskell.org/cgi-bin/hackage-scripts/package/monte-carlo.
+
+{\texttt{PLEX}}. With V.\ de Silva.
+A collection of \textsc{MATLAB} routines developed as a research tool for building and 
+studying simplicial complexes generated from point-cloud data.  Primarily written in C++.  
+\href{http://comptop.stanford.edu/programs/plex.html}http://comptop.stanford.edu/programs/plex.html.
+
+
+%------------------------------------------------------------------------------
+
+\section{\bf Peer-Review Experience}
+
+Annals of Applied Statistics
+
+Annals of Statistics
+
+Journal of the Bernoulli Society
+
+Stochastic Processes and their Applications
+
+
+\section{\bf Conferences and Workshops}
+
+Sparse Random Structures: Analysis and Computation. Banff International
+Research Station, Canada. January 24--29, 2010.
+
+Joint Statistical Meetings 2007. Salt Lake City, UT. July 29 -- August 2, 2007.
+
+The 3rd Workshop on Monte Carlo Methods. Cambridge, MA. May 13--14, 2007.
+
+AIM Workshop on Random Matrices and Higher Dimensional Inference. Palo Alto, CA. April 10--13, 2007.
+
+Biomedical Computation at Stanford (BCATS). Stanford CA. October 21, 2006.
+
+SAMSI Random Matrices Opening Workshop. Chapel Hill, NC.  September 17--20, 2006.
+
+DARPA Topological Data Analysis (TDA) Meeting. Santa Barbara, CA. May 8--10, 2006.
+
+DARPA TDA Meeting. San Rafael, CA. October 29--30, 2005.
+
+%\section{\bf Presentations}
+%
+%``Solving Nonlinear Wave Equations with Mathematica,''
+%North Carolina State University, April 23, 2003.
+
+%---------------------------------------------------------------------------
+
+%\section{\bf Service}
+%
+%\begin{itemize}
+%\item Vice President, Society of Undergraduate Mathematics, North
+%  Carolina State University, 2001--2003
+%\item Vice President, Economics Graduate Student Council, Duke
+%  University, 2006--2007
+%\end{itemize}
+
+%%---------------------------------------------------------------------------%%
+
+%\begin{center}
+%\vspace{\fill}\ \newline
+%{\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
+%{\tiny \rm $ $Date: 2006/12/12 22:53:52 $ $ }
+%{\tiny \rm $ $Revision: 1.28 $ $ }
+%\end{center}
+
+\end{resume}
+
+\end{document}
+
+%%===========================================================================%%

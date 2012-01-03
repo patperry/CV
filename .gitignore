@@ -1,3 +1,6 @@
+*.aux
 *.dvi
+*.out
 *.pdf
 *.ps
+*.swp

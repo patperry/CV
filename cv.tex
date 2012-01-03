@@ -1,413 +1,380 @@
-% cv-us.tex
-% $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $
+% Jason R. Blevins - Curriculum Vitae
 %
-% LaTeX Curriculum Vitae Template
-%
-% Copyright (C) 2004-2006 Jason Blevins
+% Copyright (C) 2004-2011 Jason R. Blevins
+%           (C) 2012 Patrick O. Perry
+% http://jblevins.org/projects/cv-template/
 %
 % You may use use this document as a template to create your own CV
-% and you may redistribute the source code freely. No attribution is
-% required in any resulting documents, however, I do ask that you
-% please leave this notice and the above URL in the source code if you
-% choose to redistribute this file.
-%
-% Jason R. Blevins <jrblevin@sdf.lonestar.org>
-% http://jrblevin.freeshell.org
-% Durham, December 12, 2006
-%
-%%---------------------------------------------------------------------------%
-%
-% Notes:
-%
-% * Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
-%   section below.
-%
-% * To create a new page use: \newpage \opening
-%
-% * res.cls includes an \address{} command which can be used up to twice,
-%   but my address is too long for the format it uses.
-%
-% * Alternate documentclass statement to put headings in margin:
-%   \documentclass[margin,line,11pt,final]{res}
-%
-% * Can divide publication/presentation list into subsections by year:
-%   \section{\bf\small\hspace{8mm}2006}
-%
-%%----------------------------------------------------------------------------%
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
 
-\documentclass[overlapped,line,letterpaper]{res}
+\documentclass[10pt,letterpaper]{article}
 
-\usepackage{ifpdf}
+\usepackage{hyperref}
+\usepackage{geometry}
 
-\ifpdf
-  \usepackage[pdftex]{hyperref}
-\else
-  \usepackage[hypertex]{hyperref}
-\fi
+% Fonts
+\usepackage[T1]{fontenc}
+\usepackage[urw-garamond]{mathdesign}
 
+% Set your name here
+\def\name{Patrick O. Perry}
+
+% The following metadata will show up in the PDF properties
 \hypersetup{
-  letterpaper,
-  colorlinks,
-  urlcolor=black,
-  pdfpagemode=none,
-  pdftitle={Curriculum Vitae},
-  pdfauthor={Patrick O. Perry},
-  pdfsubject={Curriculum Vitae},
-  pdfkeywords={networks multivariate statistics}
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {statistics, applied statistics, networks, multivariate
+    statistics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
 }
 
-%%===========================================================================%%
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.25em}
+  }
+}{
+  \end{list}
+}
 
 \begin{document}
 
-%---------------------------------------------------------------------------
-% Document Specific Customizations
+% Place name at left
+{\huge \name}
 
-% Make lists without bullets and with no indentation
-\setlength{\leftmargini}{0em}
-\renewcommand{\labelitemi}{}
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
 
-% Use large bold font for printed name at top of pages
-\renewcommand{\namefont}{\large\textbf}
+\bigskip
 
-%---------------------------------------------------------------------------
+\begin{minipage}[t]{0.5\textwidth}
+  Department of Information, \\
+  Operations, \& Management Sciences \\
+  Henry Kaufman Management Center \\
+  44 West Fourth Street, Suite 8-63 \\
+  New York, NY 10012-1125
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+  Phone: (212) 998-0194 \\
+  Fax: (212) 995-4227 \\
+  Email: \href{mailto:pperry@stern.nyu.edu}{pperyy@stern.nyu.edu} \\
+  Homepage: \href{http://ptrckprry.com/}{http://ptrckprry.com/}
+\end{minipage}
 
-\name{Patrick O. Perry}
-
-\begin{resume}
-
-\begin{ncolumn}{2}
-  Maxwell Dworkin Rm. 334       & Phone: (650) 619-5203 \\
-  33 Oxford St                  & {\tt patperry@seas.harvard.edu} \\
-  Cambridge, MA 02138           & {\tt \verb+http://people.seas.harvard.edu/~patperry+}
-\end{ncolumn}
-
-%---------------------------------------------------------------------------
-
-\section{\bf Education}
-
-Ph.D. Statistics, Stanford University, 2009
-
-M.S. Electrical Engineering, Stanford University, 2004
-
-B.S. Mathematics (Honors), Stanford University, 2003
-
-%%---------------------------------------------------------------------------%%
-
-\section{\bf Fellowships and Awards}
-\begin{itemize}
-\item Burt and Deedee McMurtry Stanford Graduate Fellowship, 2004--2007
-\end{itemize}
-
-%---------------------------------------------------------------------------
-
-\section{\bf Teaching Experience}
-
-At Stanford University:
+\section*{Education}
 
 \begin{itemize}
-\item Teaching Assistant, Spatial Statistics (Ph.D.), Spring 2009
-\item Teaching Assistant, Statistical Consulting Workshop, Winter 2009
-\item Teaching Assistant, Software for Data Analysis (Ph.D.), Winter 2008
-\item Teaching Assistant, Monte Carlo Methods (Ph.D.), Fall 2007
-\item Teaching Assistant, Modern Applied Statistics (Ph.D.), Fall 2006
-\item Teaching Assistant, Statistical Consulting Workshop, Fall 2005
-\item Teaching Assistant, Statistical Computing (M.S.), Spring 2005
+  \item Ph.D. Statistics, Stanford University, 2009.
+    \begin{itemize}
+    \item \textit{Dissertation:}
+      Cross-Validation for Unsupervised Learning.
+    \item \textit{Committee:}
+      Art Owen (principal advisor), Trevor Hastie,
+      Iain Johnstone, and Jonathan Taylor.
+    \end{itemize}
+  \item M.S. Electrical Engineering, Stanford University, 2004.
+  \item B.S. Mathematics (Honors),
+    Stanford University, 2003.
+    \begin{itemize}
+    \item \textit{Thesis:}
+      Application of Simplicial Sets to Computational Topology.
+    \item \textit{Supervisor:} by Gunnar Carlsson.
+    \end{itemize}
 \end{itemize}
 
-%------------------------------------------------------------------------------
-
-\section{\bf Research Experience}
-
-\begin{format}
-\title{l}\dates{r}\\
-\employer{l}\location{r}\\
-\body\\
-\end{format}
-
-\title{Postdoctoral Fellow}
-\employer{Patrick\ J.\ Wolfe}
-\location{Engineering and Applied Sciences, Harvard}
-\dates{2009--present}
-\begin{position}
-  Modeling and inference for network data.
-\end{position}
-
-\title{Research Assistant}
-\employer{Art\ B.\ Owen}
-\location{Statistics, Stanford}
-\dates{2006--2009}
-\begin{position}
-  Applied random matrix theory.  Latent variable methods.
-\end{position}
-
-\title{Research Assistant}
-\employer{Gunnar\ E.\ Carlsson}
-\location{Mathematics, Stanford}
-\dates{2002--2004}
-\begin{position}
-  Computational topology software and data analysis.
-\end{position}
-
-
-\section{\bf Affiliations}
-
-
-\begin{format}
-\title{l}\dates{r}\\
-\employer{l}\location{r}\\
-%\body\\
-\end{format}
-
-\title{Visiting Scholar}
-\employer{Institute for Quantitative Social Science}
-\location{Harvard}
-\dates{2010--present}
-\begin{position}
-\end{position}
-
-\title{Member}
-\employer{NSA Statistical Advisory Group}
-\location{Stanford}
-\dates{2010}
-\begin{position}
-\end{position}
-
-\title{Member}
-\employer{Geometrical/Spectral Analysis of Networks Working Group}
-\location{SAMSI}
-\dates{2010}
-\begin{position}
-\end{position}
-
-
-%---------------------------------------------------------------------------
-
-\section{\bf Employment}
-
-\begin{format}
-\title{l}\dates{r}\\
-\employer{l}\location{r}\\
-\body\\
-\end{format}
-
-\title{Consultant}
-\employer{Insignia Environmental}
-\location{Palo Alto, CA}
-\dates{2009}
-\begin{position}
-    Bootstrap-based analysis of three experiments designed to estimate
-    the environmental impact of installing new wind turbines in
-    Contra Costa County, in California.
-\end{position}
-
-\title{Consultant}
-\employer{Kingsford Capital Management}
-\location{Pt. Richmond, CA}
-\dates{2008--2009}
-\begin{position}
-    General statistics advice, help with data analysis and programming in R.
-\end{position}
-
-\title{Biostatistician}
-\employer{Stanford School of Medicine}
-\location{Stanford, CA}
-\dates{2006--2007}
-\begin{position}
-    Data analysis and reports for studies performed by resident
-    physicians under the supervision of Dr.~Raj Mitra, Orthopedic Surgery
-    Department.
-\end{position}
-
-%------------------------------------------------------------------------------
-
-\section{\bf Publications}
-
-``Point process modeling for directed interaction networks.''
-With P.\ J.\ Wolfe.
-\textit{Submitted to Journal of the Royal Statistical Society, Series B; arXiv:1011.1703v1 [stat.ME].}
-
-``Minimax rank estimation for subspace tracking.''
-With P.\ J.\ Wolfe.
-\textit{IEEE Journal of Selected Topics in Signal Processing},
-\textbf{4}(3):504--513, 2010.
-
-``A rotation test to verify latent structure.''
-With A.\ B.\ Owen.
-\textit{Journal of Machine Learning Research},
-\textbf{11}:603--624, 2010.
-
-``Cross-validation for unsupervised learning.''
-Supervised by A.\ B.\ Owen.
-Ph.D. thesis, Stanford University. 2009.
-
-``Bi-cross-validation of the SVD and the non-negative matrix factorization.''
-With A.\ B.\ Owen.
-\textit{Annals of Applied Statistics},
-\textbf{3}(2):564--594, 2009.
-
-``Efficacy of fluoroscopically guided steroid injections in the management of coccydynia.''
-With R.\ Mitra and L.\ Cheung.
-\textit{Pain Physician},
-\textbf{10}(6):775--778, 2007.
-
-``Application of simplicial sets to computational topology.''
-Supervised by G.\ E.\ Carlsson.
-Undergraduate honors thesis, Stanford University. 2003.
-
-\section{\bf Working Papers}
-
-``Dynamics of gang homicide in Chicago.''
-With A.\ V. Papachristos, P.\ J.\ Wolfe.
-
-``Implicitly Bayesian eigenvector estimation.''
-With M.\ W.\ Mahoney.
-
-``Latent variable network models: a unified view.''
-With P.\ J.\ Wolfe.
-
-
-\section{\bf Presentations}
-
-``Point process models for repeated interaction data.''
-Harvard Statistics Colloquium, Cambridge, MA.  October 25, 2010.
-
-``Point process models for pairwise interaction data.''
-Stanford Statistics Seminar, Stanford, CA.  July 13, 2010.
-
-``Point process models for pairwise interaction data.''
-Conference on Statistical Modeling and Inference for Networks (Statworks),
-Bristol, UK.  June 30, 2010.
-
-``A point process model for repeated interactions.''
-MIT Lincoln Laboratory Seminar, Lexington, MA. June 11, 2010.
-
-``Community and homophily in a corporate e-mail network.''
-New England Statistics Symposium, Cambridge, MA.  April 17, 2010.
-
-``Cross validation for principal components.''
-BIRS Program on Sparse Random Structures: Analysis and Computation,
-Banff, Canada.
-January 28, 2010.
-
-``Choosing how many principal components to keep.''
-Stanford Statistics Seminar, Stanford, CA.  April 14, 2009.
-
-``Cross validation for unsupervised learning.''
-Wharton Statistics Seminar, Philadelphia, PA.  February 11, 2009.
-
-% This screws up pagination:
-%``Cross validation for unsupervised learning.''
-%23andme Company Seminar, Mountain View, CA.  January 22, 2009.
-
-``Cross validation for unsupervised learning.''
-Hewlett Packard Labs Seminar, Palo Alto, CA.  September 26, 2008.
-
-
-\section{\bf Posters}
-
-``Point process models for pairwise interactions.''
-With P.\ J.\ Wolfe.
-SAMSI Program on Complex Networks Opening Workshop,
-Research Triangle Park, NC,
-August 29--September 1, 2010.
-
-``Latent covariate detection and verification.''
-With A.\ B.\ Owen.
-Biomedical Computation at Stanford Symposium (BCATS),
-Stanford CA,
-October 21, 2006.
-
-``Latent covariate detection and verification: a case study in genetics.''
-With A.\ B.\ Owen.
-SAMSI Random Matrices Opening Workshop,
-Research Triangle Park, NC,
-September 17--20, 2006.
-
-
-%------------------------------------------------------------------------------
-
-%%===========================================================================%%
-%\newpage
-%\opening
-
-\section{\bf Software}
-
-{\texttt{RMTstat}}. With I.\ Johnstone, Z.\ Ma, and M.\ Shahram.
-Random matrix theory package for R.
-Distributions and statistics for high-dimensional covariance matrices.
-\href{http://cran.r-project.org/web/packages/RMTstat/index.html}http://cran.r-project.org.  2009.
-
-{\texttt{bcv}}.
-Bi-cross-validation package for R.
-Cross-validation-based rank selection for SVD approximations.
-\href{http://cran.r-project.org/web/packages/bcv/index.html}http://cran.r-project.org.  2009.
-
-{\texttt{hs-blas}}.
-Linear algebra library for Haskell.
-Convenient interface to low-level BLAS and LAPACK libraries.
-\href{http://hackage.haskell.org/cgi-bin/hackage-scripts/package/blas}http://hackage.haskell.org.  2008--present.
-
-{\texttt{hs-monte-carlo}}.
-Monte Carlo simulation library for Haskell.  Random number distributions
-and sampling functions.
-\href{http://hackage.haskell.org/cgi-bin/hackage-scripts/package/monte-carlo}http://hackage.haskell.org.  2008--present.
-
-{\texttt{PLEX}}. With V.\ de Silva.
-Computational topology library for \textsc{MATLAB} and C++.
-Simplicial complexes and homology from point cloud data.
-\href{http://comptop.stanford.edu/programs/plex.html}http://comptop.stanford.edu.  2006.
-
-
-%------------------------------------------------------------------------------
-
-\section{\bf Grant Proposals}
-
-``Measuring, understanding, and responding to covert social networks.''
-With P.\ J.\ Wolfe et al.
-Office of Naval Research MURI Award 58153-MA-MUR.
-2010.
-
-%------------------------------------------------------------------------------
-
-\section{\bf Peer-Review Experience}
-
-Annals of Applied Statistics,
-Annals of Statistics,
-Chemometrics and Intelligent Laboratory Systems,
-Journal of the Bernoulli Society,
-Stochastic Processes and their Applications,
-Transactions on Pattern Analysis and Machine Intelligence
-
-
-
-%\section{\bf Presentations}
-%
-%``Solving Nonlinear Wave Equations with Mathematica,''
-%North Carolina State University, April 23, 2003.
-
-%---------------------------------------------------------------------------
-
-%\section{\bf Service}
-%
+\section*{Employment}
+
+\begin{itemize}
+\item Assistant Professor, Department of Information, Operations, \&
+  Management Sciences, New York University Leonard N.~Stern School of Business,
+  2011--present.
+\item Postdoctoral Fellow, School of Engineering and Applied Sciences, Harvard
+  University, 2009--2011.
+  \begin{itemize}
+  \item \textit{Supervisor:} Patrick Wolfe
+  \end{itemize}
+\end{itemize}
+
+
+%\section*{Consulting}
 %\begin{itemize}
-%\item Vice President, Society of Undergraduate Mathematics, North
-%  Carolina State University, 2001--2003
-%\item Vice President, Economics Graduate Student Council, Duke
-%  University, 2006--2007
+%\item Insignia Environmental, Palo Alto, CA, 2009.
+%    Bootstrap-based analysis of three experiments designed to estimate
+%    the environmental impact of installing new wind turbines in
+%    Contra Costa County, in California.
+%\item Kingsford Capital Management, Pt. Richmond, CA, 2008--2009.
+%    General statistics advice, help with data analysis and programming in R.
+%\item Stanford School of Medicine, Stanford, CA, 2006--2007.
+%    Data analysis and reports for studies performed by resident
+%    physicians under the supervision of Dr.~Raj Mitra, Orthopedic Surgery
+%    Department.
 %\end{itemize}
 
-%%---------------------------------------------------------------------------%%
 
-%\begin{center}
-%\vspace{\fill}\ \newline
-%{\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
-%{\tiny \rm $ $Date: 2006/12/12 22:53:52 $ $ }
-%{\tiny \rm $ $Revision: 1.28 $ $ }
-%\end{center}
+\section*{Affiliations}
+\begin{itemize}
+\item Visiting Scholar, Institute for Quantitative Social Science, Harvard University, 2010--2011.
+\item Member, NSA Statistical Advisory Group, Stanford University, 2010--2011.
+\item Member, Geometrical/Spectral Analysis of Networks Working Group, SAMSI, 2010.
+\end{itemize}
 
-\end{resume}
+
+\section*{Fields of Research Interest}
+
+Modern Multivariate Statistics
+
+\section*{Research}
+
+\subsection*{Publications}
+
+\begin{itemize}
+\item Perry, P.~O. and P.~J.~Wolfe (2011).
+Point process modeling for directed interaction networks.
+\textit{Under revision.}
+
+\item Allen, G.~I. and P.~O.~Perry (2011).
+The singular value decomposition and high-dimensional data.
+\textit{Encyclopedia of Environmentrics}, to appear.
+
+\item Perry, P.~O. and M.~W.~Mahoney (2011).
+Regularized Laplacian estimation and fast eigenvector approximation.
+\textit{Twenty-Fifth Annual Conference on Neural Information Processing Systems (NIPS 2011).} 
+
+\item Perry, P.~O. and P.~J.~Wolfe (2010).
+Minimax rank estimation for subspace tracking.
+\textit{IEEE Journal of Selected Topics in Signal Processing},
+\textbf{4}(3):504--513.
+
+\item Perry, P.~O. and A.~B.~Owen (2010).
+A rotation test to verify latent structure.
+\textit{Journal of Machine Learning Research},
+\textbf{11}:603--624.
+
+\item Owen, A.~B. and P.~O.~Perry (2009)
+Bi-cross-validation of the SVD and the non-negative matrix factorization.
+\textit{Annals of Applied Statistics},
+\textbf{3}(2):564--594.
+
+\item Mitra, R., L.~Cheung, P.~O.~Perry (2007)
+Efficacy of fluoroscopically guided steroid injections in the management of coccydynia.
+\textit{Pain Physician},
+\textbf{10}(6):775--778.
+\end{itemize}
+
+
+
+\section*{Teaching}
+
+
+\subsection*{Stanford University}
+
+\begin{itemize}
+\item Spatial Statistics (Ph.D.), Spring 2009, Teaching Assistant for Jonathan Taylor.
+\item Statistical Consulting Workshop, Winter 2009, Teaching Assistant for Rob Tibshirani.
+\item Software for Data Analysis (Ph.D.), Winter 2008, Teaching Assistant for John Chambers.
+\item Monte Carlo Methods (Ph.D.), Fall 2007, Teaching Assistant for Art Owen.
+\item Modern Applied Statistics (Ph.D.), Fall 2006, Teaching Assistant for Trevor Hastie.
+\item Statistical Consulting Workshop, Fall 2005, Teaching Assistant for Richard Olshen.
+\item Statistical Computing (M.S.), Spring 2005, Teaching Assistant for Susan Holmes.
+\end{itemize}
+
+
+\section*{Conference and Seminar Presentations}
+
+\begin{itemize}
+
+\item Point process modeling for directed interactions
+  \begin{itemize}
+  \item Columbia University, Department of Statistics, November 2, 2011.
+  \item Harvard University, Institute of Quantitative Social Sciences, April 11, 2011.
+  \item MIT, Department of Mathematics, February 11, 2011.
+  \item NYU Stern, IOMS Department, February 8, 2011.
+  \item University of Washington, Department of Statistics, January 28, 2010.
+  \item % Point process models for repeated interaction data
+    Harvard University, Department of Statistics, October 25, 2010.
+  \item % Point process models for pairwise interaction data
+    Stanford University, Department of Statistics, July 13, 2010.
+  \item % Point process models for pairwise interaction data
+    Conference on Statistical Modeling and Inference for Networks (Statworks),
+    Bristol, UK.  June 30, 2010.
+  \item % A point process model for repeated interactions
+    MIT Lincoln Laboratory Seminar, Lexington, MA, June 11, 2010.
+  \end{itemize}
+
+\item Community and homophily in a corporate e-mail network
+  \begin{itemize}
+  \item New England Statistics Symposium, Cambridge, MA, April 17, 2010.
+  \end{itemize}
+
+\item Cross validation for unsupervised learning
+  \begin{itemize}
+    \item % Cross validation for principal components
+      BIRS Program on Sparse Random Structures: Analysis and Computation,
+      Banff, Canada.
+      January 28, 2010.
+    \item Wharton School of the University of Pennsylvania, Department of Statistics,
+      February 11, 2009. 
+    \item 23andme, Mountain View, CA, January 22, 2009.
+    \item Hewlett Packard Labs, Palo Alto, CA, September 26, 2008.
+  \end{itemize}
+
+\item Choosing how many principal components to keep
+  \begin{itemize}
+    \item Stanford University, Department of Statistics, April 14, 2009.
+  \end{itemize}
+
+\end{itemize}
+
+
+
+
+\section*{Posters}
+\begin{itemize}
+\item Dual approaches to network science.
+  With P.~J.~Wolfe.
+  Interdisciplinary Workshop on Information and Decision in Social Networks,
+  MIT, Cambridge, MA,
+  May 31 -- June 1, 2011.
+
+\item Point process models for pairwise interactions.
+  With P.~J.~Wolfe.
+  SAMSI Program on Complex Networks Opening Workshop,
+  Research Triangle Park, NC,
+  August 29 -- September 1, 2010.
+
+\item Latent covariate detection and verification.
+  With A.~B.~Owen.
+  Biomedical Computation at Stanford Symposium (BCATS),
+  Stanford CA,
+  October 21, 2006.
+
+\item Latent covariate detection and verification: a case study in genetics.
+  With A.~B.~Owen.
+  SAMSI Random Matrices Opening Workshop,
+  Research Triangle Park, NC,
+  September 17--20, 2006.
+\end{itemize}
+
+
+\section*{Software}
+\begin{itemize}
+\item \href{http://cran.r-project.org/web/packages/RMTstat/index.html}
+{\texttt{RMTStat} (http://cran.r-project.org)}.
+With I.~Johnstone, Z.~Ma, and M.~Shahram.
+Random matrix theory package for R.
+Distributions and statistics for high-dimensional covariance matrices.
+2009.
+
+\item \href{http://cran.r-project.org/web/packages/bcv/index.html}
+{\texttt{bcv} (http://cran.r-project.org)}.
+Bi-cross-validation package for R.
+Cross-validation-based rank selection for SVD approximations.
+2009.
+
+\item \href{http://hackage.haskell.org/cgi-bin/hackage-scripts/package/blas}
+{\texttt{hs-blas} (http://hackage.haskell.org)}.
+Linear algebra library for Haskell.
+Convenient interface to low-level BLAS and LAPACK libraries.
+2008--2011.
+
+\item \href{http://hackage.haskell.org/cgi-bin/hackage-scripts/package/monte-carlo}
+{\texttt{hs-monte-carlo} (http://hackage.haskell.org)}.
+Monte Carlo simulation library for Haskell.
+Random number distributions and sampling functions.
+2008--2011.
+
+\item \href{http://comptop.stanford.edu/programs/plex.html}
+{\texttt{PLEX} (http://comptop.stanford.edu)}.
+With V.\ de Silva.
+Computational topology library for \textsc{MATLAB} and C++.
+Simplicial complexes and homology from point cloud data.
+2006.
+
+\end{itemize}
+
+
+\section*{Grant Proposals}
+\begin{itemize}
+  \item Measuring, understanding, and responding to covert social networks.
+  With P.~J.~Wolfe et al.
+  Office of Naval Research MURI Award 58153-MA-MUR.
+  2010.
+\end{itemize}
+
+
+\section*{Professional Activities}
+
+\begin{itemize}
+\item Reviewer for
+  \textit{Annals of Applied Statistics},
+  \textit{Annals of Statistics},
+  \textit{Chemometrics and Intelligent Laboratory Systems},
+  \textit{Computational Statistics and Data Analysis},
+  \textit{Electronic Journal of Statistics},
+  \textit{Journal of the Bernoulli Society},
+  \textit{Journal of the Royal Statistical Society (Series B),}
+  \textit{Science},
+  \textit{Stochastic Processes and their Applications},
+  \textit{Transactions on Pattern Analysis and Machine Intelligence}
+\item Member, American Statistical Association, 2011--Present.
+\item Member, Institute of Mathematical Statistics, 2011--Present.
+\end{itemize}
+
+\section*{Advising}
+
+\begin{itemize}
+\item Ph.D. Students: Cheryl Flynn, Nikolay Kulmatitsky.
+\end{itemize}
+
+%\section*{Honors, Awards, \& Fellowships}
+\section*{Fellowships}
+
+\begin{itemize}
+\item Burt and Deedee McMurtry Stanford Graduate Fellowship, 2004--2007.
+\end{itemize}
+
+\medskip
+
+% Footer
+\begin{center}
+  \begin{small}
+    Last updated: \today
+  \end{small}
+\end{center}
 
 \end{document}
-
-%%===========================================================================%%

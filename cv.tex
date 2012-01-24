@@ -12,12 +12,18 @@
 
 \documentclass[10pt,letterpaper]{article}
 
-\usepackage{hyperref}
 \usepackage{geometry}
+
+% BibTeX
+\usepackage{natbib}
+\usepackage{bibentry}
 
 % Fonts
 \usepackage[T1]{fontenc}
 \usepackage[urw-garamond]{mathdesign}
+
+\usepackage{hyperref}
+
 
 % Set your name here
 \def\name{Patrick O. Perry}
@@ -73,6 +79,7 @@
 }
 
 \begin{document}
+\nobibliography*
 
 % Place name at left
 {\huge \name}
@@ -166,37 +173,13 @@
 \subsection*{Publications}
 
 \begin{itemize}
-\item Perry, P.~O. and P.~J.~Wolfe (2011).
-Point process modeling for directed interaction networks.
-\textit{Under revision.}
-
-\item Allen, G.~I. and P.~O.~Perry (2011).
-The singular value decomposition and high-dimensional data.
-\textit{Encyclopedia of Environmentrics}, to appear.
-
-\item Perry, P.~O. and M.~W.~Mahoney (2011).
-Regularized Laplacian estimation and fast eigenvector approximation.
-\textit{Twenty-Fifth Annual Conference on Neural Information Processing Systems (NIPS 2011).} 
-
-\item Perry, P.~O. and P.~J.~Wolfe (2010).
-Minimax rank estimation for subspace tracking.
-\textit{IEEE Journal of Selected Topics in Signal Processing},
-\textbf{4}(3):504--513.
-
-\item Perry, P.~O. and A.~B.~Owen (2010).
-A rotation test to verify latent structure.
-\textit{Journal of Machine Learning Research},
-\textbf{11}:603--624.
-
-\item Owen, A.~B. and P.~O.~Perry (2009)
-Bi-cross-validation of the SVD and the non-negative matrix factorization.
-\textit{Annals of Applied Statistics},
-\textbf{3}(2):564--594.
-
-\item Mitra, R., L.~Cheung, P.~O.~Perry (2007)
-Efficacy of fluoroscopically guided steroid injections in the management of coccydynia.
-\textit{Pain Physician},
-\textbf{10}(6):775--778.
+\item \bibentry{allen2012singular}.
+\item \bibentry{perry2011point}.
+\item \bibentry{perry2011regularized}.
+\item \bibentry{perry2010minimax}.
+\item \bibentry{perry2010rotation}.
+\item \bibentry{owen2009bcv}.
+\item \bibentry{mitra2007efficacy}.
 \end{itemize}
 
 
@@ -218,22 +201,41 @@ Efficacy of fluoroscopically guided steroid injections in the management of cocc
 
 \section*{Conference Presentations}
 \begin{itemize}
-\item First conference of the International Society for NonParametric
-Statistics (ISNPS), invited session, ``Statistical Inference for Networks.'' Chalkidiki, Greece, June 15--19, 2012.
-\item Joint Statistical Meetings (JSM), invited session ``Methods for Statistical Network Analysis: Beyond the Standard Paradigm.'' 
-    San Diego, CA, July 31, 2012.
-\item Eastern North American Region/International Biometric Society (ENAR), invited session ``The Analysis of Social Network Data in Public Health.''
-    Washington, DC, April 1--4, 2012.
-\item Conference on Statistical Modeling and Inference for Networks (Statworks), submitted talk
-  ``Point process models for pairwise interaction data.''
-  Bristol, UK.  June 30, 2010.
-\item New England Statistics Symposium (NESS), submitted talk
-  ``Community and homophily in a corporate e-mail network.''
-  Cambridge, MA, April 17, 2010.
-\item Banff International Research Station (BIRS)
-  Program on Sparse Random Structures: Analysis and Computation,
-  invited talk ``Cross validation for principal components.''
-  Banff, Canada.  January 28, 2010.
+\item Methods for Statistical Network Analysis: Beyond the Standard Paradigm.
+  \textit{Joint Statistical Meetings (JSM)}.
+  San Diego, CA.
+  July 31, 2012.
+  Invited Session.
+
+\item Statistical Inference for Networks. 
+  \textit{First conference of the International Society for NonParametric Statistics (ISNPS)}.
+  Chalkidiki, Greece.
+  June 15--19, 2012.
+  Invited Session.
+
+\item The Analysis of Social Network Data in Public Health.
+  \textit{Eastern North American Region/International Biometric Society (ENAR)}.
+  Washington, DC.
+  April 1--4, 2012.
+  Invited Session.
+
+\item Point process models for pairwise interaction data.
+  \textit{Conference on Statistical Modeling and Inference for Networks (Statworks)}.
+  Bristol, UK.
+  June 30, 2010.
+  Submitted Talk.
+
+\item Community and homophily in a corporate e-mail network.
+  \textit{New England Statistics Symposium (NESS)}.
+  Cambridge, MA.
+  April 17, 2010.
+  Submitted Talk.
+
+\item Cross validation for principal components.
+  \textit{Banff International Research Station (BIRS) Program on Sparse Random Structures: Analysis and Computation}.
+  Banff, Canada.
+  January 28, 2010.
+  Invited Talk.
 \end{itemize}
 
 
@@ -277,28 +279,34 @@ Statistics (ISNPS), invited session, ``Statistical Inference for Networks.'' Cha
 
 \section*{Posters}
 \begin{itemize}
-\item Dual approaches to network science.
-  With P.~J.~Wolfe.
-  Interdisciplinary Workshop on Information and Decision in Social Networks,
-  MIT, Cambridge, MA,
+\item P.~O.~Perry and M.~W.~Mahoney.
+  Regularized Laplacian estimation and fast eigenvector approximation.
+  \textit{Twenty-Fifth Annual Conference on Neural Information Processing Systems (NIPS 2011)}.
+  Granada, Spain.
+  December 12, 2011.
+
+\item P.~O.~Perry and P.~J.~Wolfe.
+  Dual approaches to network science.
+  \textit{Interdisciplinary Workshop on Information and Decision in Social Networks}.
+  MIT, Cambridge, MA.
   May 31 -- June 1, 2011.
 
-\item Point process models for pairwise interactions.
-  With P.~J.~Wolfe.
-  SAMSI Program on Complex Networks Opening Workshop,
-  Research Triangle Park, NC,
+\item P.~O.~Perry and P.~J.~Wolfe.
+  Point process models for pairwise interactions.
+  \textit{SAMSI Program on Complex Networks Opening Workshop}.
+  Research Triangle Park, NC.
   August 29 -- September 1, 2010.
 
-\item Latent covariate detection and verification.
-  With A.~B.~Owen.
-  Biomedical Computation at Stanford Symposium (BCATS),
-  Stanford CA,
+\item P.~O.~Perry and A.~B.~Owen.
+  Latent covariate detection and verification.
+  \textit{Biomedical Computation at Stanford Symposium (BCATS)}.
+  Stanford CA.
   October 21, 2006.
 
-\item Latent covariate detection and verification: a case study in genetics.
-  With A.~B.~Owen.
-  SAMSI Random Matrices Opening Workshop,
-  Research Triangle Park, NC,
+\item P.~O.~Perry and A.~B.~Owen.
+  Latent covariate detection and verification: a case study in genetics.
+  \textit{SAMSI Random Matrices Opening Workshop}.
+  Research Triangle Park, NC.
   September 17--20, 2006.
 \end{itemize}
 
@@ -388,5 +396,8 @@ Computational topology library for \textsc{MATLAB} and C++.
     Last updated: \today
   \end{small}
 \end{center}
+
+\bibliographystyle{plain}
+\nobibliography{refs}
 
 \end{document}

@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{allen2012singular}
+G.~I. Allen and P.~O. Perry.
+\newblock The singular value decomposition and high-dimensional data.
+\newblock In {\em Encyclopedia of Environmetrics}. John Wiley \& Sons, to
+  appear.
+\newblock Accepted, 2012.
+
+\bibitem{mitra2007efficacy}
+R.~Mitra, L.~Cheung, and P.~O. Perry.
+\newblock Efficacy of fluoroscopically guided steroid injections in the
+  management of coccydynia.
+\newblock {\em Pain Physician}, 10(6):775--778, 2007.
+
+\bibitem{owen2009bcv}
+A.~B. Owen and P.~O. Perry.
+\newblock Bi-cross-validation of the {SVD} and the non-negative matrix
+  factorization.
+\newblock {\em Annals of Applied Statistics}, 3(2):564--594, 2009.
+
+\bibitem{perry2011regularized}
+P.~O. Perry and M.~W. Mahoney.
+\newblock Regularized laplacian estimation and fast eigenvector approximation.
+\newblock In J.~Shawe-Taylor, R.~S. Zemel, P.~Bartlett, F.~C.~N. Pereira, and
+  K.~Q. Weinberger, editors, {\em Advances in Neural Information Processing
+  Systems 24}, pages 2420--2428. 2011.
+
+\bibitem{perry2010rotation}
+P.~O. Perry and A.~B. Owen.
+\newblock A rotation test to verify latent structure.
+\newblock {\em Journal of Machine Learning Research}, 11(Feb):603--624, 2010.
+
+\bibitem{perry2010minimax}
+P.~O. Perry and P.~J. Wolfe.
+\newblock Minimax rank estimation for subspace tracking.
+\newblock {\em IEEE Journal of Selected Topics in Signal Processing},
+  4(3):504--513, 2010.
+
+\bibitem{perry2011point}
+P.~O. Perry and P.~J. Wolfe.
+\newblock Point process modeling for directed interaction networks.
+\newblock Submitted, 2011.
+
+\end{thebibliography}

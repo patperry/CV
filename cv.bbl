@@ -3,9 +3,14 @@
 \bibitem{allen2012singular}
 G.~I. Allen and P.~O. Perry.
 \newblock The singular value decomposition and high-dimensional data.
-\newblock In {\em Encyclopedia of Environmetrics}. John Wiley \& Sons, to
-  appear.
+\newblock In {\em Encyclopedia of Environmetrics}. John Wiley \& Sons.
 \newblock Accepted, 2012.
+
+\bibitem{flynn2012consistent}
+C.~J. Flynn and P.~O. Perry.
+\newblock Consistent biclustering.
+\newblock {\em Preprint ar{X}iv:1206.6927}.
+\newblock Submitted, 2013.
 
 \bibitem{mitra2007efficacy}
 R.~Mitra, L.~Cheung, and P.~O. Perry.
@@ -31,15 +36,22 @@ P.~O. Perry and A.~B. Owen.
 \newblock A rotation test to verify latent structure.
 \newblock {\em Journal of Machine Learning Research}, 11(Feb):603--624, 2010.
 
+\bibitem{perry2012null}
+P.~O. Perry and P.~J. Wolfe.
+\newblock Null models for network data.
+\newblock {\em Preprint ar{X}iv:1201.5871}.
+\newblock Submitted, 2012.
+
+\bibitem{perry2012point}
+P.~O. Perry and P.~J. Wolfe.
+\newblock Point process modelling for directed interaction networks.
+\newblock {\em Journal of the Royal Statistical Society (Series B)}.
+\newblock Accepted, 2012.
+
 \bibitem{perry2010minimax}
 P.~O. Perry and P.~J. Wolfe.
 \newblock Minimax rank estimation for subspace tracking.
 \newblock {\em IEEE Journal of Selected Topics in Signal Processing},
   4(3):504--513, 2010.
-
-\bibitem{perry2011point}
-P.~O. Perry and P.~J. Wolfe.
-\newblock Point process modeling for directed interaction networks.
-\newblock Submitted, 2011.
 
 \end{thebibliography}

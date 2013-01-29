@@ -2,9 +2,10 @@
 
 \bibitem{allen2012singular}
 G.~I. Allen and P.~O. Perry.
-\newblock The singular value decomposition and high-dimensional data.
-\newblock In {\em Encyclopedia of Environmetrics}. John Wiley \& Sons.
-\newblock Accepted, 2012.
+\newblock Singular value decomposition for high-dimensional data.
+\newblock In A.~H. El-Shaarawi and W.~Piegorsch, editors, {\em Encyclopedia of
+  Environmetrics}, pages 2469--2472. John Wiley \& Sons, Chichester, UK, second
+  edition, 2012.
 
 \bibitem{flynn2012consistent}
 C.~J. Flynn and P.~O. Perry.
